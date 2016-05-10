@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Dem songs
+{% endblock %}
+
+{% block content %}
+    <section id="player_section">
+        <div id="title_container" class="container-fluid">
+            <h1>Dem AI music</h1>
+        </div>
+        <div id="player_container" class="container-fluid">
+            {% include "jplayer.html" with songs=songs %}
+        </div>
+    </section>
+
+{% endblock %}
